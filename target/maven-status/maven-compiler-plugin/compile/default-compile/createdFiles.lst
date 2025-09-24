@@ -1,0 +1,8 @@
+com\margins\expensetracker\entity\User.class
+com\margins\expensetracker\entity\SpendingBudget.class
+com\margins\expensetracker\entity\Category.class
+com\margins\expensetracker\entity\EntityModel.class
+com\margins\expensetracker\entity\Spending.class
+com\margins\expensetracker\JakartaRestConfiguration.class
+com\margins\expensetracker\enums\PeriodType.class
+com\margins\expensetracker\resources\JakartaEE10Resource.class

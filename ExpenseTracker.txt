@@ -1,0 +1,36 @@
+USER
+-----
+id (PK)
+username
+email
+password_hash
+created_at
+
+
+CATEGORY
+---------
+id (PK)
+user_id (FK → USER.id)
+name
+description
+
+
+SPENDING
+----------
+id (PK)
+user_id (FK → USER.id)
+category_id (FK → CATEGORY.id)
+amount
+description
+date
+
+
+BUDGET
+--------
+id (PK)
+user_id (FK → USER.id)
+category_id (FK → CATEGORY.id) [nullable → total budget if NULL]
+period_type (ENUM: WEEKLY, MONTHLY, YEARLY)
+period_start (DATE)
+period_end (DATE)
+limit_amount
